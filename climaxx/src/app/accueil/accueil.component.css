@@ -1,0 +1,9 @@
+.image{
+    background-image: url("src/assets/fresh2.jpg");
+    height: 360px;
+    background-size: cover;
+}
+
+ul li{
+    margin: 5px;
+}

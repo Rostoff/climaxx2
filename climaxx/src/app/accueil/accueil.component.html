@@ -1,1 +1,16 @@
-<p>accueil works!</p>
+<div class="image"></div>
+
+<div class="container">
+    <ul>
+        <li *ngFor="let produit of produits" class="float-left">
+                <div class="card" style="width: 10rem;">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">{{produit.name}}</h5>
+                        <p class="card-text">{{produit.description}}</p>
+                        <a href="#" class="btn btn-primary">ACHETER !!</a>
+                        </div>
+                    </div>
+        </li>
+    </ul>
+</div>
