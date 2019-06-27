@@ -69,12 +69,12 @@ let getEventail= function(cb){
     });
 };
 
-let getBrumatiseur= function(cb){
+let getBrumisateur= function(cb){
     if(!dbConn) {
-        connect(() => getBrumatiseur(cb));
+        connect(() => getBrumisateur(cb));
         return;
     }
-    dbConn.db('ClimaxxDB').collection("Brumatiseur").find({}).toArray((err, result)=>{
+    dbConn.db('ClimaxxDB').collection("Brumisateur").find({}).toArray((err, result)=>{
         if (err){
             console.log("err");
             return;
@@ -85,5 +85,5 @@ let getBrumatiseur= function(cb){
 
 
 module.exports = {
-    getBrumatiseur, getVentilateur, getEventail, getClimatiseur, getClimatiseurEcolo
+    getBrumisateur, getVentilateur, getEventail, getClimatiseur, getClimatiseurEcolo
 }
