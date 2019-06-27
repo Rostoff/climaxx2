@@ -17,6 +17,7 @@ import { GestionCompteComponent } from './gestion-compte/gestion-compte.componen
 import { RechercheComponent } from './recherche/recherche.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { AccueilComponent } from './accueil/accueil.component';
+import { InscriptionComponent } from './inscription/inscription.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AccueilComponent } from './accueil/accueil.component';
     GestionCompteComponent,
     RechercheComponent,
     ConnexionComponent,
-    AccueilComponent
+    AccueilComponent,
+    InscriptionComponent
   ],
   imports: [
     BrowserModule,
