@@ -11,6 +11,7 @@ import { GestionCompteComponent } from './gestion-compte/gestion-compte.componen
 import { RechercheComponent } from './recherche/recherche.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { AccueilComponent } from './accueil/accueil.component';
+import { InscriptionComponent } from './inscription/inscription.component';
 
 const routes: Routes = [
   { path: 'Brumisateur', component: BrumisateurComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'GestionCompte', component: GestionCompteComponent  },
   { path: 'Recherche', component: RechercheComponent },
   { path: 'Connexion', component: ConnexionComponent },
+  { path: 'Inscription', component: InscriptionComponent },
   { path: 'Accueil', component: AccueilComponent },
   { path: '', redirectTo: '/Accueil', pathMatch: 'full'}
 ]
