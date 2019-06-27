@@ -3,12 +3,13 @@
 <div class="container">
     <ul>
         <li *ngFor="let produit of produits" class="float-left">
-                <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card" style="width: 11rem;">
+                        <img class="card-img-top" [src]="produit.img" alt="Card image cap">
                         <div class="card-body">
                         <h5 class="card-title">{{produit.name}}</h5>
                         <p class="card-text">{{produit.description}}</p>
-                        <a href="#" class="btn btn-primary">ACHETER !!</a>
+                        <h3>{{produit.prix}} €</h3>
+                        <a href="#" class="btn btn-primary">VOIR</a>
                         </div>
                     </div>
         </li>

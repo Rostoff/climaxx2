@@ -4,4 +4,5 @@ export class Produit {
     descriptif: string;
     prix: number;
     quantity: number;
+    img: string;
 }
