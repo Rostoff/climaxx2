@@ -82,7 +82,10 @@ let getBrumisateur= function(cb){
         cb(result);
     });
 };
-
+0 // bite mdr
+1 // tro marran
+0 //
+0
 
 module.exports = {
     getBrumisateur, getVentilateur, getEventail, getClimatiseur, getClimatiseurEcolo

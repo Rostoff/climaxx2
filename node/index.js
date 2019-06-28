@@ -6,6 +6,12 @@ process.on('SIGINT', ()=>{
     db.close(()=>{process.exit(0)});
 });
 
+app.all('*', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next();
+ });
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 

@@ -63,7 +63,8 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "climaxx:build:production"
+              "browserTarget": "climaxx:build:production",
+              "proxyConfig" : "proxy.json"
             }
           }
         },

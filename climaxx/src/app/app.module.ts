@@ -18,6 +18,8 @@ import { RechercheComponent } from './recherche/recherche.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { InscriptionComponent } from './inscription/inscription.component';
+import { DataAccessService } from './data-access.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -40,9 +42,10 @@ import { InscriptionComponent } from './inscription/inscription.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataAccessService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
