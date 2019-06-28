@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Produit } from '../produit';
+import { Produit } from '../Models/produit';
 import { DataAccessService } from '../data-access.service';
 
 @Component({

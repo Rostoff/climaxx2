@@ -1,4 +1,4 @@
-import { Produit } from './produit';
+import { Produit } from './Models/produit';
 
 export const PRODUITS: Produit[]= [
     {id: 1, name: 'Ventilo turbine', descriptif: 'C\'est génialement frais', prix: 99, quantity: 150, img:'assets/image/ventiloplage2.jpg'},
