@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Produit } from '../produit';
+import { DataAccessService } from '../data-access.service';
 
 @Component({
   selector: 'app-climatiseur-ecolo',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClimatiseurEcoloComponent implements OnInit {
 
-  constructor() { }
+  climatiseursEcolo: Produit[];
+  constructor(private service: DataAccessService ) { }
 
   ngOnInit() {
+    this.service.getClimatiseursEcolo().subscribe((climatiseursEcolo)=>{
+      this.climatiseursEcolo=climatiseursEcolo;
+    });
   }
 
 }

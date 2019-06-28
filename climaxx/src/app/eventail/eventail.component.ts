@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Produit } from '../produit';
+import { DataAccessService } from '../data-access.service';
 
 @Component({
   selector: 'app-eventail',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventailComponent implements OnInit {
 
-  constructor() { }
+  eventails: Produit[];
+  constructor(private service: DataAccessService ) { }
 
   ngOnInit() {
+    this.service.getEventail().subscribe((eventails)=>{
+      this.eventails=eventails;
+    });
   }
+
 
 }
